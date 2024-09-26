@@ -27,4 +27,9 @@ public class MsgRestController {
 		String responseBody="Message saved sucessfully...";
 		return new ResponseEntity<String>(responseBody, HttpStatus.CREATED);
 	}
+	
+	@GetMapping("/greet2")
+	public String getGreetMsg2() {	
+		return "GOOD MORNING GUYZ...";
+	}
 }
